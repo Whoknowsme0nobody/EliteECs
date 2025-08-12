@@ -96,44 +96,106 @@
             margin-bottom: 15px;
         }
 
-        /* Pricing Table */
-        .pricing-table {
-            overflow-x: auto;
+        /* Pricing & Accessibility */
+        .pricing-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 40px;
             margin-top: 30px;
         }
 
-        table {
-            width: 100%;
-            border-collapse: collapse;
+        .pricing-card {
             background: white;
+            padding: 30px;
             border-radius: 10px;
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            overflow: hidden;
+            text-align: center;
+            border-top: 4px solid #3498db;
         }
 
-        th {
-            background: #3498db;
-            color: white;
+        .price-highlight {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #3498db;
+            margin: 20px 0;
+        }
+
+        .accessibility-section {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .accessibility-intro {
+            font-size: 1.1rem;
+            margin-bottom: 25px;
+            font-weight: 500;
+        }
+
+        .waiver-options {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 25px 0;
+        }
+
+        .waiver-card {
+            background: #f8f9fa;
             padding: 20px;
-            text-align: center;
+            border-radius: 8px;
+            border-left: 4px solid #27ae60;
+        }
+
+        .waiver-card h4 {
+            color: #27ae60;
+            margin-bottom: 10px;
             font-size: 1.1rem;
         }
 
-        td {
-            padding: 20px;
-            text-align: center;
-            border-bottom: 1px solid #eee;
-            vertical-align: top;
+        .application-info {
+            background: #e8f4f8;
+            padding: 25px;
+            border-radius: 8px;
+            margin: 25px 0;
+            border-left: 4px solid #3498db;
         }
 
-        tr:hover {
-            background-color: #f8f9fa;
-        }
-
-        .price {
-            font-size: 1.4rem;
-            font-weight: bold;
+        .application-info h4 {
             color: #3498db;
+            margin-bottom: 15px;
+        }
+
+        .community-note {
+            background: #f0f8f0;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #27ae60;
+            margin-top: 25px;
+        }
+
+        .community-note p {
+            margin: 0;
+            color: #27ae60;
+            font-size: 0.95rem;
+        }
+
+        .btn-reduction {
+            background: #f39c12;
+            margin-top: 15px;
+        }
+
+        .btn-reduction:hover {
+            background: #e67e22;
+        }
+
+        .btn-waiver {
+            background: #27ae60;
+            margin-top: 15px;
+        }
+
+        .btn-waiver:hover {
+            background: #229954;
         }
 
         /* How it works */
@@ -363,42 +425,46 @@
         </div>
     </section>
 
-    <!-- Pricing Table -->
+    <!-- Pricing & Accessibility -->
     <section class="section">
         <div class="container">
-            <h2>What You Get — Pricing</h2>
+            <h2>Pricing & Accessibility</h2>
             
-            <div class="pricing-table">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Tier</th>
-                            <th>Price</th>
-                            <th>Ideal For</th>
-                            <th>Key Features</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Starter Kit</strong></td>
-                            <td class="price">$49</td>
-                            <td>Independent students</td>
-                            <td>PDF guide, templates, publishing list, 1 Q&A session</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Guided Sprint</strong></td>
-                            <td class="price">$199</td>
-                            <td>Step-by-step group program</td>
-                            <td>4 live weekly calls, draft feedback, certificate, publishing help</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Premium Mentorship</strong></td>
-                            <td class="price">$499</td>
-                            <td>Personal coaching & support</td>
-                            <td>1-on-1 calls, unlimited chat, deep feedback, final polish & showcase help</td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="pricing-content">
+                <div class="pricing-card standard-price">
+                    <h3>Standard Price</h3>
+                    <div class="price-highlight">$100</div>
+                    <p>Full access to the Starter Kit PDF — a clean, minimalist, step-by-step guide to publish your first research paper in 4 weeks. Immediate digital delivery.</p>
+                    <a href="https://paypal.me/forcollegeapps/100" class="btn">Get Starter Kit – $100</a>
+                </div>
+                
+                <div class="accessibility-section">
+                    <h3>Fee Waivers & Reductions</h3>
+                    <p class="accessibility-intro">We believe quality education should be accessible to all. That's why we offer:</p>
+                    
+                    <div class="waiver-options">
+                        <div class="waiver-card">
+                            <h4>Full Fee Waiver</h4>
+                            <p>For students who genuinely cannot afford the fee (simple application required).</p>
+                        </div>
+                        
+                        <div class="waiver-card">
+                            <h4>Partial Fee Reduction</h4>
+                            <p>For students from low-income regions or countries — pay $50 instead of $100.</p>
+                            <a href="https://paypal.me/forcollegeapps/50" class="btn btn-reduction">Pay Reduced Fee – $50</a>
+                        </div>
+                    </div>
+                    
+                    <div class="application-info">
+                        <h4>How to Apply</h4>
+                        <p>Email <strong>eliteextracurriculars@gmail.com</strong> with a brief explanation or fill out the waiver form on our website. Applications are reviewed quickly and confidentially.</p>
+                        <a href="mailto:eliteextracurriculars@gmail.com?subject=Fee Waiver Application&body=Hi, I would like to apply for a fee waiver. Here's my situation:" class="btn btn-waiver">Apply for Fee Waiver</a>
+                    </div>
+                    
+                    <div class="community-note">
+                        <p><em>We encourage students who receive fee waivers to share their success stories and testimonials to help grow our supportive community.</em></p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -489,5 +555,4 @@
         </div>
     </section>
 </body>
-                </html>
-                
+</html>
