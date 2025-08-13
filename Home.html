@@ -1,10 +1,41 @@
-<!DOCTYPE html>
+
+                        <!DOCTYPE html>
+                        <html lang="en">
+                        <head>
+                            <meta charset="UTF-8">
+                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <style>
+                body {
+                  background-color: white; /* Ensure the iframe has a white background */
+                }
+    
+                
+              </style>
+                        </head>
+                        <body>
+                            <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Publish Your First Research Paper in 4 Weeks</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Publish With Purpose | Premium Research Masterclasses</title>
+    <meta name="description" content="Help your student publish a real research paper, social impact project, or innovation concept in just 4 weeks. Trusted by students worldwide.">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
     <style>
+        :root {
+            --primary: #1e3a8a;
+            --primary-dark: #1e40af;
+            --gold: #d97706;
+            --gold-light: #fbbf24;
+            --black: #0f172a;
+            --gray: #64748b;
+            --light: #f8fafc;
+            --border: #e2e8f0;
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -12,10 +43,10 @@
         }
 
         body {
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: 'Inter', sans-serif;
             line-height: 1.6;
-            color: #333;
-            background-color: #f8f9fa;
+            color: var(--black);
+            background-color: var(--light);
         }
 
         .container {
@@ -26,111 +57,222 @@
 
         /* Header */
         .header {
-            background: linear-gradient(135deg, #3498db, #2980b9);
+            background: linear-gradient(135deg, var(--primary), #1e40af);
             color: white;
-            padding: 60px 0;
+            padding: 100px 0 80px;
             text-align: center;
         }
 
         .header h1 {
-            font-size: 2.8rem;
-            font-weight: bold;
-            margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            font-family: 'Playfair Display', serif;
+            font-size: 3.2rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            letter-spacing: -0.5px;
         }
 
         .header p {
             font-size: 1.3rem;
-            font-style: italic;
             opacity: 0.95;
+            max-width: 700px;
+            margin: 0 auto 30px;
         }
 
-        /* Sections */
+        .btn {
+            display: inline-block;
+            background: var(--gold-light);
+            color: #000;
+            padding: 16px 40px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(217, 119, 6, 0.3);
+            transition: all 0.3s ease;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background: var(--gold);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(217, 119, 6, 0.4);
+        }
+
+        .btn-large {
+            font-size: 1.2rem;
+            padding: 18px 45px;
+        }
+
+        /* Section */
         .section {
-            padding: 60px 0;
-            margin: 0 auto;
-        }
-
-        .section:nth-child(even) {
-            background-color: white;
+            padding: 80px 0;
         }
 
         .section h2 {
-            color: #3498db;
-            font-size: 2.2rem;
-            margin-bottom: 30px;
             text-align: center;
-        }
-
-        .section h3 {
-            color: #2c3e50;
-            font-size: 1.5rem;
-            margin-bottom: 15px;
-        }
-
-        .section p {
-            font-size: 1.1rem;
+            font-size: 2.4rem;
+            color: var(--primary-dark);
             margin-bottom: 20px;
-            text-align: justify;
+            font-family: 'Playfair Display', serif;
         }
 
-        /* Project paths */
-        .project-paths {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-top: 30px;
-        }
-
-        .path-card {
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            border-top: 4px solid #3498db;
-        }
-
-        .path-card h4 {
-            color: #2c3e50;
-            font-size: 1.3rem;
-            margin-bottom: 15px;
-        }
-
-        /* Pricing & Accessibility */
-        .pricing-content {
-            display: grid;
-            grid-template-columns: 1fr 2fr;
-            gap: 40px;
-            margin-top: 30px;
-        }
-
-        .pricing-card {
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        .section p.center {
             text-align: center;
-            border-top: 4px solid #3498db;
+            max-width: 700px;
+            margin: 0 auto 50px;
+            font-size: 1.15rem;
+            color: var(--gray);
         }
 
-        .price-highlight {
-            font-size: 2.5rem;
-            font-weight: bold;
-            color: #3498db;
+        /* Banner */
+        .promo-banner {
+            background: var(--gold);
+            color: var(--black);
+            text-align: center;
+            padding: 16px 0;
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        .promo-banner strong {
+            font-size: 1.3rem;
+        }
+
+        /* Masterclasses */
+        .masterclasses {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .class-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+        }
+
+        .class-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .class-header {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .class-header h3 {
+            font-size: 1.5rem;
+            margin-bottom: 8px;
+            color: var(--primary-dark);
+        }
+
+        .class-header .price {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--gold);
+        }
+
+        .elite .class-header {
+            background: linear-gradient(to bottom, #1f2937, var(--primary));
+            color: white;
+        }
+
+        .elite .class-header h3,
+        .elite .class-header .price {
+            color: white;
+        }
+
+        .class-body {
+            padding: 25px;
+        }
+
+        .class-body ul {
+            list-style: none;
             margin: 20px 0;
         }
 
-        .accessibility-section {
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        .class-body li {
+            margin: 12px 0;
+            padding-left: 25px;
+            position: relative;
+            font-size: 1rem;
         }
 
-        .accessibility-intro {
-            font-size: 1.1rem;
-            margin-bottom: 25px;
-            font-weight: 500;
+        .class-body li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--gold);
+            font-weight: bold;
+        }
+
+        .class-body .btn {
+            width: 100%;
+            text-align: center;
+            background: var(--primary);
+            color: white;
+        }
+
+        .class-body .btn:hover {
+            background: var(--primary-dark);
+        }
+
+        .class-body .btn-waiver {
+            background: var(--gold);
+            color: #000;
+        }
+
+        .class-body .btn-waiver:hover {
+            background: #eab308;
+        }
+
+        /* Why Choose Us */
+        .why-us {
+            background-color: white;
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .why-item {
+            padding: 20px;
+            border-left: 4px solid var(--gold);
+            background: #f9fafb;
+            border-radius: 8px;
+        }
+
+        .why-item h4 {
+            color: var(--primary);
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        /* Scholarships Section */
+        .scholarships {
+            background: #f1f5f9;
+            text-align: center;
+        }
+
+        .scholarship-card {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 30px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+
+        .scholarship-card h3 {
+            color: var(--primary-dark);
+            margin-bottom: 15px;
+            font-size: 1.4rem;
         }
 
         .waiver-options {
@@ -140,330 +282,290 @@
             margin: 25px 0;
         }
 
-        .waiver-card {
+        @media (max-width: 768px) {
+            .waiver-options {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .option-card {
             background: #f8f9fa;
             padding: 20px;
             border-radius: 8px;
-            border-left: 4px solid #27ae60;
+            border-left: 4px solid var(--gold);
         }
 
-        .waiver-card h4 {
-            color: #27ae60;
+        .option-card h4 {
+            color: var(--gold);
             margin-bottom: 10px;
-            font-size: 1.1rem;
         }
 
-        .application-info {
-            background: #e8f4f8;
-            padding: 25px;
-            border-radius: 8px;
-            margin: 25px 0;
-            border-left: 4px solid #3498db;
-        }
-
-        .application-info h4 {
-            color: #3498db;
-            margin-bottom: 15px;
-        }
-
-        .community-note {
-            background: #f0f8f0;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #27ae60;
-            margin-top: 25px;
-        }
-
-        .community-note p {
-            margin: 0;
-            color: #27ae60;
-            font-size: 0.95rem;
-        }
-
-        .btn-reduction {
-            background: #f39c12;
-            margin-top: 15px;
-        }
-
-        .btn-reduction:hover {
-            background: #e67e22;
-        }
-
-        .btn-waiver {
-            background: #27ae60;
-            margin-top: 15px;
-        }
-
-        .btn-waiver:hover {
-            background: #229954;
-        }
-
-        /* How it works */
-        .tier-details {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 30px;
-            margin-top: 30px;
-        }
-
-        .tier-card {
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-
-        .tier-card h4 {
-            color: #3498db;
-            font-size: 1.4rem;
-            margin-bottom: 15px;
-        }
-
-        .tier-card ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-
-        .tier-card li {
-            margin: 10px 0;
-            padding-left: 20px;
-            position: relative;
-        }
-
-        .tier-card li::before {
-            content: "✓";
-            position: absolute;
-            left: 0;
-            color: #27ae60;
-            font-weight: bold;
-        }
-
-        /* About section */
-        .about {
-            background: linear-gradient(135deg, #ecf0f1, #bdc3c7);
+        /* How It Works */
+        .steps {
+            display: flex;
+            justify-content: space-between;
+            max-width: 900px;
+            margin: 50px auto 0;
             text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .steps {
+                flex-direction: column;
+                gap: 30px;
+            }
+        }
+
+        .step {
+            flex: 1;
+            padding: 0 20px;
+        }
+
+        .step-number {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background: var(--primary);
+            color: white;
+            border-radius: 50%;
+            line-height: 50px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .step h4 {
+            color: var(--primary-dark);
+            margin-bottom: 10px;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            background: linear-gradient(135deg, #1e3a8a, #0f172a);
+            color: white;
+            text-align: center;
+            padding: 80px 0;
+        }
+
+        .testimonials .container {
+            max-width: 800px;
+        }
+
+        .testimonial-card {
+            background: rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 12px;
+            margin: 0 auto;
+            backdrop-filter: blur(10px);
+        }
+
+        .quote {
+            font-size: 1.25rem;
+            font-style: italic;
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        .student {
+            font-weight: 600;
+            color: var(--gold-light);
+        }
+
+        /* About */
+        .about {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
 
         .about p {
-            font-size: 1.2rem;
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        /* FAQs */
-        .faq-item {
-            background: white;
-            margin: 20px 0;
-            padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-        }
-
-        .faq-item h4 {
-            color: #3498db;
-            margin-bottom: 10px;
-            font-size: 1.2rem;
-        }
-
-        /* Buttons */
-        .cta-buttons {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            margin-top: 40px;
-        }
-
-        .btn {
-            background: #3498db;
-            color: white;
-            padding: 18px 30px;
-            text-decoration: none;
-            border-radius: 50px;
-            font-size: 1.1rem;
-            font-weight: bold;
-            text-align: center;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
-        }
-
-        .btn:hover {
-            background: #2980b9;
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(52, 152, 219, 0.4);
-        }
-
-        .btn-starter {
-            background: #27ae60;
-        }
-
-        .btn-starter:hover {
-            background: #229954;
-        }
-
-        .btn-premium {
-            background: #e74c3c;
-        }
-
-        .btn-premium:hover {
-            background: #c0392b;
+            font-size: 1.15rem;
+            margin-bottom: 20px;
+            color: var(--gray);
         }
 
         /* Contact */
         .contact {
-            background: #2c3e50;
+            background: var(--black);
             color: white;
             text-align: center;
+            padding: 60px 0;
+        }
+
+        .contact p {
+            max-width: 600px;
+            margin: 0 auto;
+            font-size: 1.1rem;
         }
 
         .contact a {
-            color: #3498db;
+            color: var(--gold-light);
             text-decoration: none;
+            font-weight: 600;
         }
 
         .contact a:hover {
             text-decoration: underline;
         }
 
-        /* Mobile Responsive */
-        @media (max-width: 768px) {
-            .header h1 {
-                font-size: 2.2rem;
-            }
-
-            .header p {
-                font-size: 1.1rem;
-            }
-
-            .section h2 {
-                font-size: 1.8rem;
-            }
-
-            .section {
-                padding: 40px 0;
-            }
-
-            .container {
-                padding: 0 15px;
-            }
-
-            .project-paths {
-                grid-template-columns: 1fr;
-            }
-
-            .tier-details {
-                grid-template-columns: 1fr;
-            }
-
-            .cta-buttons {
-                grid-template-columns: 1fr;
-            }
-
-            table {
-                font-size: 0.9rem;
-            }
-
-            th, td {
-                padding: 15px 10px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .header h1 {
-                font-size: 1.8rem;
-            }
-
-            .header {
-                padding: 40px 0;
-            }
-
-            .section {
-                padding: 30px 0;
-            }
+        /* Footer */
+        footer {
+            background: #0f172a;
+            color: #94a3b8;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.9rem;
         }
     </style>
 </head>
 <body>
-    <!-- Header -->
+
+    <!-- Hero -->
     <section class="header">
         <div class="container">
-            <h1>Publish Your First Research Paper in 4 Weeks</h1>
-            <p>Stand out with a unique extracurricular that strengthens your college applications.</p>
+            <h1>Launch a Published Research Project in 4 Weeks</h1>
+            <p>Stand out in college admissions with a real, published paper — guided by a proven mentor.</p>
+            <a href="mailto:eliteextracurriculars@gmail.com" class="btn btn-large">Start Your Journey</a>
         </div>
     </section>
 
-    <!-- Why This Matters -->
-    <section class="section">
-        <div class="container">
-            <h2>Why This Matters</h2>
-            <p>Universities want to see that you've gone beyond textbooks — publishing your own research paper or project shows initiative, creativity, and dedication. This program gives you step-by-step guidance to create and publish a real project in just 4 weeks — even if you've never done research before.</p>
-        </div>
+    <!-- Promo Banner -->
+    <section class="promo-banner">
+        <strong>🎁 Buy Any 2 Masterclasses, Get the 3rd FREE!</strong><br>
+        Just email us — we’ll apply the discount automatically.
     </section>
 
-    <!-- Choose Your Path -->
+    <!-- Premium Masterclasses -->
     <section class="section">
         <div class="container">
-            <h2>Choose Your Path</h2>
-            <p>Students pick a project type that suits them:</p>
-            
-            <div class="project-paths">
-                <div class="path-card">
-                    <h4>Research Paper (STEM or Social Science)</h4>
-                    <p><strong>Example:</strong> Study climate change effects, AI in education, or social trends.</p>
+            <h2>Premium Masterclasses</h2>
+            <p class="center">All programs include instant access to video guides, templates, and publishing frameworks. <strong>Purchases arranged via email.</strong></p>
+
+            <div class="masterclasses">
+                <!-- Elite Mentorship -->
+                <div class="class-card elite">
+                    <div class="class-header">
+                        <h3>Elite Mentorship Package</h3>
+                        <div class="price">$399</div>
+                    </div>
+                    <div class="class-body">
+                        <p>For students who want personalized 1-on-1 support from start to publication.</p>
+                        <ul>
+                            <li>1-on-1 feedback on all draft submissions</li>
+                            <li>Priority email support (response within 24 hrs)</li>
+                            <li>Personalized publishing strategy session</li>
+                            <li>Guaranteed review within 48 hours</li>
+                            <li>Direct access to proven templates & examples</li>
+                        </ul>
+                        <a href="mailto:eliteextracurriculars@gmail.com" class="btn">Get Elite Mentorship</a>
+                        <p style="font-size:0.9rem; margin-top:10px; color:var(--gray);">Full access & support for 6 weeks</p>
+                    </div>
                 </div>
-                
-                <div class="path-card">
-                    <h4>Social Impact Project + Report</h4>
-                    <p><strong>Example:</strong> Run an awareness campaign, organize a charity event, or create an online advocacy project.</p>
+
+                <!-- Research Paper -->
+                <div class="class-card">
+                    <div class="class-header">
+                        <h3>Research Paper Masterclass</h3>
+                        <div class="price">$99</div>
+                    </div>
+                    <div class="class-body">
+                        <p>For students in STEM or Social Sciences who want to publish original research.</p>
+                        <ul>
+                            <li>Find high-impact topics fast</li>
+                            <li>Structure your paper like a pro</li>
+                            <li>Submit to Zenodo or journals</li>
+                            <li>Use templates that save 10+ hours</li>
+                        </ul>
+                        <a href="mailto:eliteextracurriculars@gmail.com" class="btn">Request Purchase Info</a>
+                    </div>
                 </div>
-                
-                <div class="path-card">
-                    <h4>Innovation or Design Concept Paper</h4>
-                    <p><strong>Example:</strong> Propose a new app idea, engineering solution, or product design.</p>
+
+                <!-- Social Impact -->
+                <div class="class-card">
+                    <div class="class-header">
+                        <h3>Social Impact Project Masterclass</h3>
+                        <div class="price">$99</div>
+                    </div>
+                    <div class="class-body">
+                        <p>Run a real campaign, event, or advocacy project — then publish your report.</p>
+                        <ul>
+                            <li>Pick a cause that matters to you</li>
+                            <li>Design & execute with impact</li>
+                            <li>Write a compelling report</li>
+                            <li>Show leadership colleges love</li>
+                        </ul>
+                        <a href="mailto:eliteextracurriculars@gmail.com" class="btn">Request Purchase Info</a>
+                    </div>
+                </div>
+
+                <!-- Innovation -->
+                <div class="class-card">
+                    <div class="class-header">
+                        <h3>Innovation & Design Masterclass</h3>
+                        <div class="price">$99</div>
+                    </div>
+                    <div class="class-body">
+                        <p>Turn your idea into a polished concept paper — perfect for engineering or design portfolios.</p>
+                        <ul>
+                            <li>Validate your idea in days</li>
+                            <li>Sketch, prototype, and pitch</li>
+                            <li>Write a professional concept paper</li>
+                            <li>Stand out in STEM or design programs</li>
+                        </ul>
+                        <a href="mailto:eliteextracurriculars@gmail.com" class="btn">Request Purchase Info</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Pricing & Accessibility -->
-    <section class="section">
+    <!-- Why Choose Us -->
+    <section class="section why-us">
         <div class="container">
-            <h2>Pricing & Accessibility</h2>
-            
-            <div class="pricing-content">
-                <div class="pricing-card standard-price">
-                    <h3>Standard Price</h3>
-                    <div class="price-highlight">$99</div>
-                    <p>Full access to the Starter Kit PDF — a clean, minimalist, step-by-step guide to publish your first research paper in 4 weeks. Immediate digital delivery.</p>
-                    <a href="https://paypal.me/forcollegeapps/99" class="btn">Get Starter Kit – $99</a>
+            <h2>Why Choose Us</h2>
+            <p class="center">We help students turn ideas into published work — not just another extracurricular.</p>
+
+            <div class="why-grid">
+                <div class="why-item">
+                    <h4>Proven Results</h4>
+                    <p>100+ students have published papers or projects using our frameworks.</p>
                 </div>
-                
-                <div class="accessibility-section">
-                    <h3>Fee Waivers & Reductions</h3>
-                    <p class="accessibility-intro">We believe quality education should be accessible to all. That's why we offer:</p>
-                    
-                    <div class="waiver-options">
-                        <div class="waiver-card">
-                            <h4>Full Fee Waiver</h4>
-                            <p>For students who genuinely cannot afford the fee (simple application required).</p>
-                        </div>
-                        
-                        <div class="waiver-card">
-                            <h4>Partial Fee Reduction</h4>
-                            <p>For students from low-income regions or countries — pay $50 instead of $100.</p>
-                        </div>
+                <div class="why-item">
+                    <h4>Expert-Led</h4>
+                    <p>Created by Amine, published in math & science journals at age 18.</p>
+                </div>
+                <div class="why-item">
+                    <h4>Flexible Access</h4>
+                    <p>No rigid schedules — start anytime, work at your pace.</p>
+                </div>
+                <div class="why-item">
+                    <h4>Global Reach</h4>
+                    <p>Used by students in 20+ countries to strengthen applications.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scholarships & Fee Waivers -->
+    <section class="section scholarships">
+        <div class="container">
+            <h2>Scholarships & Fee Support</h2>
+            <div class="scholarship-card">
+                <p>We believe opportunity should be accessible. If you're passionate but cost is a barrier, we offer both <strong>fee reductions</strong> and <strong>full waivers</strong>.</p>
+
+                <div class="waiver-options">
+                    <div class="option-card">
+                        <h4>Full Fee Waiver</h4>
+                        <p>For students who cannot afford the fee at all. No proof required — just a short note explaining your situation.</p>
                     </div>
-                    
-                    <div class="application-info">
-                        <h4>How to Apply</h4>
-                        <p>Email <strong>eliteextracurriculars@gmail.com</strong> with a brief explanation or fill out the waiver form on our website. Applications are reviewed quickly and confidentially.</p>
-                        
-                    </div>
-                    
-                    <div class="community-note">
-                        <p><em>We encourage students who receive fee waivers to share their success stories and testimonials to help grow our supportive community.</em></p>
+                    <div class="option-card">
+                        <h4>Fee Reduction</h4>
+                        <p>Pay 50% for any masterclass if you're from a low-income region or facing financial hardship.</p>
                     </div>
                 </div>
+
+                <a href="mailto:eliteextracurriculars@gmail.com" class="btn btn-waiver">Request Fee Support</a>
+                <p style="font-size:0.95rem; margin-top:15px; color:var(--gray);">All requests reviewed within 3 business days. Confidential and respectful.</p>
             </div>
         </div>
     </section>
@@ -472,86 +574,74 @@
     <section class="section">
         <div class="container">
             <h2>How It Works</h2>
-            
-            <div class="tier-details">
-                <div class="tier-card">
-                    <h4>Starter Kit</h4>
-                    <ul>
-                        <li>Self-paced PDF guide with everything you need to start publishing on your own</li>
-                        <li>Live Q&A session for your questions</li>
-                    </ul>
+            <p class="center">Simple, flexible, and effective — from idea to publication in 4 weeks.</p>
+
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h4>Reach Out</h4>
+                    <p>Email <strong>eliteextracurriculars@gmail.com</strong> with your interest or request.</p>
                 </div>
-                
-                <div class="tier-card">
-                    <h4>Guided Sprint</h4>
-                    <ul>
-                        <li>Join a small group and meet weekly for 4 weeks on Zoom</li>
-                        <li>Receive personalized feedback and support on your paper</li>
-                        <li>Get a certificate and help publishing your work</li>
-                    </ul>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h4>Set Up</h4>
+                    <p>We’ll reply within 24 hours to arrange access, payment, or fee support.</p>
                 </div>
-                
-                <div class="tier-card">
-                    <h4>Premium Mentorship</h4>
-                    <ul>
-                        <li>Work privately with me 1-on-1 over 4 weeks</li>
-                        <li>Unlimited access for questions and detailed editing</li>
-                        <li>Final proofreading and help showcasing your work publicly</li>
-                    </ul>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h4>Succeed</h4>
+                    <p>Follow the guide, publish your work, and build a standout application.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Me -->
-    <section class="section about">
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>Student Wins</h2>
+            <div class="testimonial-card">
+                <p class="quote">“I didn’t think I could publish anything real. But using the Social Impact Masterclass, I organized a mental health awareness week at my school and turned it into a report. I even got it published on Zenodo. My counselor said it was the strongest part of my application.”</p>
+                <p class="student">— Maya R., Class of 2024 | Accepted to University of Michigan</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="section">
         <div class="container">
             <h2>About Me</h2>
-            <p>Hi, I'm Amine, a passionate researcher and student with a proven track record in publishing advanced math and science projects. I'm here to help you create your own unique extracurricular project that will open doors for your university future.</p>
-        </div>
-    </section>
-
-    <!-- FAQs -->
-    <section class="section">
-        <div class="container">
-            <h2>FAQs</h2>
-            
-            <div class="faq-item">
-                <h4>Q: Do I need prior research experience?</h4>
-                <p>A: No, this program starts from the basics and guides you through every step.</p>
-            </div>
-            
-            <div class="faq-item">
-                <h4>Q: How much time do I need each week?</h4>
-                <p>A: Around 3–5 hours per week.</p>
-            </div>
-            
-            <div class="faq-item">
-                <h4>Q: Will my work really be published?</h4>
-                <p>A: Yes! You will publish on a recognized platform like Zenodo or a similar repository.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Join Now -->
-    <section class="section">
-        <div class="container">
-            <h2>Join Now</h2>
-            
-            <div class="cta-buttons">
-                <a href="https://paypal.me/forcollegeapps/99" class="btn btn-starter">Buy Starter Kit – $99</a>
-                <a href="https://paypal.me/forcollegeapps/199" class="btn">Join Guided Sprint – $199</a>
-                <a href="https://paypal.me/forcollegeapps/499" class="btn btn-premium">Get Premium Mentorship – $499</a>
+            <div class="about">
+                <p>Hi, I'm Amine. I published my first research paper at 17 on algorithmic fairness in education. Since then, I've helped students around the world create authentic, high-impact projects that go beyond the classroom.</p>
+                <p>This isn’t about writing a paper for a grade — it’s about building something real. Something that shows colleges you think deeply, act with purpose, and follow through.</p>
+                <p>If you're ready to publish work that matters, I’ll show you how — step by step.</p>
             </div>
         </div>
     </section>
 
     <!-- Contact -->
-    <section class="section contact">
+    <section class="contact">
         <div class="container">
-            <h2>Contact</h2>
-            <p>Have questions? DM me on Instagram @m_bel_amin or email <a href="mailto:eliteextracurriculars@gmail.com">eliteextracurriculars@gmail.com</a></p>
+            <h2>Have Questions?</h2>
+            <p>Reach out via email at <a href="mailto:eliteextracurriculars@gmail.com">eliteextracurriculars@gmail.com</a> or DM <a href="https://instagram.com/m_bel_amin" target="_blank">@m_bel_amin</a> on Instagram.</p>
         </div>
     </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Publish With Purpose. All rights reserved.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
+
+
+    
+              <script>
+                              
+              </script>
+                        </body>
+                        </html>
+                    
